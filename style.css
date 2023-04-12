@@ -3,15 +3,35 @@
     padding: 0;
     font-family: 'Times New Roman', Times, serif;
 }
+body{
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(
+    to right,
+    pink 0%,
+    pink 50%,
+    paleturquoise 50%,
+    paleturquoise 100%
+  );
+}
 .container{
-background-color: blanchedalmond;
-min-height: 100vh;
+    border-radius: 10px;
+    min-height: 80vh;
+    
 }
 .todo_container{
-    padding: 20px 10px;
+    padding: 10px;
 }
 .input_box{
-    
+    display: flex;
+    align-items: center;
+}
+.input_box i{
+    margin-left: -30px;
+    z-index: 10;
+    cursor: pointer;
+    color: rgb(82, 82, 82);
+    font-size: 20px;
 }
 .input_box input{
     width: 100%;
@@ -24,8 +44,12 @@ min-height: 100vh;
     font-size: 25px;
     border-radius: 7px;
 }
+.input_box input:focus{
+    outline: none;
+}
 .input_box input::placeholder{
     color: #FCC8D1;
+    font-size: 20px;
 }
 .list_box{
     margin-top:30px ;
@@ -35,7 +59,7 @@ min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #FFABAB;
+    background-color: #CBE4DE;
     padding: 8px 7px;
     border-radius: 7px;
     margin: 6px 0;
@@ -51,4 +75,15 @@ min-height: 100vh;
     cursor: pointer;
     height: 28px;
     width: 28px;
+}
+
+/* responsive design */
+
+@media only screen and (min-width: 600px) {
+  .container{
+    background-color: #3232325a;
+    max-width: 600px;
+    padding-top: 20px;
+    margin: 40px auto;
+  }
 }
