@@ -1,23 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>To Do List || jQuery </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div>
-        <div>
-            <input  type="text">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List || jQuery</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="todo_container">
+        <div class="input_box">
+          <input id="input__field" type="text" placeholder="Enter your Task name"/>
         </div>
-        <div>
-            <ul>
-                <li>Demo list </li>
-            </ul>
+        <div class="list_box">
+          <ul>
+            <li>
+              Demo list
+              <div class="button_box">
+                <span><img src="/images/check.png" alt="check"></span>
+                <span> <img src="/images/delete.png" alt="delete"></span>
+              </div>
+            </li>
+            <li>
+              Demo list
+              <div class="button_box">
+                <span><img src="/images/check.png" alt="check"></span>
+                <span> <img src="/images/delete.png" alt="delete"></span> 
+              </div>
+            </li>
+          </ul>
         </div>
+      </div>
     </div>
     <script src="/script.js"></script>
-</body>
+  </body>
 </html>
